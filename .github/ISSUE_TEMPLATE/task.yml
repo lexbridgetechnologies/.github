@@ -1,0 +1,21 @@
+name: Task
+description: Work that is not a bug or a feature - tests, documentation, tidying
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: "Title: **start with a verb**, e.g. *Write the how-to for adding goals*."
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+  - type: textarea
+    id: done
+    attributes:
+      label: How will we know it is done?

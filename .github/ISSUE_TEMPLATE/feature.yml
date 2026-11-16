@@ -1,0 +1,29 @@
+name: Feature
+description: Something new the app should do, agreed and planned
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: "Title: **what the app will do or have**, e.g. *Client folder navigator*."
+  - type: textarea
+    id: what
+    attributes:
+      label: What should the app do?
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who is it for?
+  - type: textarea
+    id: how-we-know
+    attributes:
+      label: How will we know it works?
+      description: One check per line.
+    validations:
+      required: true
+  - type: input
+    id: requirement
+    attributes:
+      label: Spec requirement
+      description: The line in docs/spec.md it meets, such as R3. Not in the spec yet? It is an Idea first.

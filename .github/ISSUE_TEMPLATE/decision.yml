@@ -1,0 +1,36 @@
+name: Decision
+description: A choice that someone has to make, with the options and a date
+type: Decision
+title: "Decide: "
+body:
+  - type: markdown
+    attributes:
+      value: "Title: **Decide: the question**, e.g. *Decide: one environment per customer, or shared?*. Assign it to the person who decides and set **Due** on the Lexbridge Apps Project to the decide-by date."
+  - type: textarea
+    id: question
+    attributes:
+      label: What has to be decided?
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: The options
+      description: One per line, each with what it means for us.
+    validations:
+      required: true
+  - type: input
+    id: decider
+    attributes:
+      label: Who decides?
+      description: Their Entra account, e.g. name@lexbridge.ie
+    validations:
+      required: true
+  - type: textarea
+    id: waits
+    attributes:
+      label: What waits on it?
+      description: The goals or work that can't go on until it is decided.
+  - type: markdown
+    attributes:
+      value: "Decided: write the decision and why as a comment, then close the issue as completed."

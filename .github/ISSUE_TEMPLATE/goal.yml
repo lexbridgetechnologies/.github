@@ -1,0 +1,22 @@
+name: Goal
+description: Something to reach by a date. Its work is its sub-issues
+type: Goal
+title: "Goal [number]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Title: **Goal [number]: what will be true**, e.g. *Goal 2: Expand UAT with automated test cases*. Each app counts its own goals, and a goal keeps its number for good."
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What will be true when it is done?
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: One check per line.
+  - type: markdown
+    attributes:
+      value: "After creating it: set **Start** and **Due** on the Lexbridge Apps Project, then add the work with **Create sub-issue**."

@@ -1,0 +1,42 @@
+name: Bug
+description: Something that worked, or should work, and does not
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: "Title: **what goes wrong**, e.g. *A new run overwrites revision 1*."
+  - type: markdown
+    attributes:
+      value: "**No client data.** No names, emails, documents or screenshots of client records. Give the correlation ID instead."
+  - type: textarea
+    id: did
+    attributes:
+      label: What did you do?
+      description: The steps, in order, so someone else can do the same.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - Dev
+        - Test
+        - Prod
+  - type: input
+    id: correlation
+    attributes:
+      label: Correlation ID
+      description: From the error message, if there was one.
