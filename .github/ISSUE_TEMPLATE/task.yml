@@ -1,7 +1,11 @@
 name: Task
 description: Work that is not a bug or a feature - tests, documentation, tidying
 type: Task
+projects: ["lexbridgetechnologies/2"]
 body:
+  - type: markdown
+    attributes:
+      value: "**No client data.** No client names, emails, documents or screenshots of client records, here or in comments."
   - type: markdown
     attributes:
       value: "Title: **start with a verb**, e.g. *Write the how-to for adding goals*."
@@ -9,6 +13,7 @@ body:
     id: what
     attributes:
       label: What needs doing?
+      description: "One or two sentences. Trace shows this as the summary."
     validations:
       required: true
   - type: textarea
@@ -16,6 +21,12 @@ body:
     attributes:
       label: Why?
   - type: textarea
-    id: done
+    id: done-when
     attributes:
-      label: How will we know it is done?
+      label: Done when
+      description: "One check per line. Someone else should be able to tick each one."
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "Part of a goal? Open the goal and add this with **Add existing issue**, or create it there with **Create sub-issue**."

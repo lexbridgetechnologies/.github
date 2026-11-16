@@ -1,7 +1,12 @@
 name: UAT
 description: User testing for one release, before it goes to Prod
+type: Task
 title: "UAT: "
+projects: ["lexbridgetechnologies/2"]
 body:
+  - type: markdown
+    attributes:
+      value: "**No client data.** No client names, emails, documents or screenshots of client records, here or in comments."
   - type: markdown
     attributes:
       value: "Title: **UAT: the app and the release**, e.g. *UAT: Polaris Goal 3*."
@@ -9,14 +14,14 @@ body:
     id: release
     attributes:
       label: Release
-      description: The goal this release completes.
+      description: "The goal this release completes."
     validations:
       required: true
   - type: textarea
     id: checks
     attributes:
       label: Checks
-      description: One per line, each naming the change it tests.
+      description: "One per line, each naming the change it tests."
       value: |
         - [ ] #[change] [what to try, and what should happen]
         - [ ] #[change] [what to try, and what should happen]
@@ -26,12 +31,16 @@ body:
     id: tester
     attributes:
       label: Tester
-      description: Their Entra account, e.g. name@lexbridge.ie
+      description: "Their Entra account, e.g. name@lexbridge.ie"
+    validations:
+      required: true
   - type: input
     id: signer
     attributes:
       label: Signs off
-      description: Their Entra account, e.g. name@lexbridge.ie
+      description: "Their Entra account, e.g. name@lexbridge.ie"
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: "A check fails: open a Bug and link it here. Signed off: the person in **Signs off** closes this issue as completed."

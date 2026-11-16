@@ -2,21 +2,33 @@ name: Goal
 description: Something to reach by a date. Its work is its sub-issues
 type: Goal
 title: "Goal [number]: "
+projects: ["lexbridgetechnologies/2"]
 body:
   - type: markdown
     attributes:
-      value: "Title: **Goal [number]: what will be true**, e.g. *Goal 2: Expand UAT with automated test cases*. Each app counts its own goals, and a goal keeps its number for good."
+      value: "**No client data.** No client names, emails, documents or screenshots of client records, here or in comments."
+  - type: markdown
+    attributes:
+      value: "Title: **Goal [number]: what will be true**, e.g. *Goal 2: Expand UAT with automated test cases*. For the number, look at the app's goals (Issues, then type:Goal) and use the next one. Each app counts its own goals, and a goal keeps its number for good, even when an earlier one is dropped."
   - type: textarea
     id: outcome
     attributes:
       label: What will be true when it is done?
+      description: "One or two sentences. Trace shows this as the summary."
     validations:
       required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: "What it is worth to the business, or to the people who use the app."
   - type: textarea
     id: done-when
     attributes:
       label: Done when
-      description: One check per line.
+      description: "One check per line. Someone else should be able to tick each one."
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: "After creating it: set **Start** and **Due** on the Lexbridge Apps Project, then add the work with **Create sub-issue**."

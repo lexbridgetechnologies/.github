@@ -1,18 +1,19 @@
 name: Bug
 description: Something that worked, or should work, and does not
 type: Bug
+projects: ["lexbridgetechnologies/2"]
 body:
   - type: markdown
     attributes:
-      value: "Title: **what goes wrong**, e.g. *A new run overwrites revision 1*."
+      value: "**No client data.** No client names, emails, documents or screenshots of client records, here or in comments."
   - type: markdown
     attributes:
-      value: "**No client data.** No names, emails, documents or screenshots of client records. Give the correlation ID instead."
+      value: "Title: **what goes wrong**, e.g. *A new run overwrites revision 1*."
   - type: textarea
-    id: did
+    id: happened
     attributes:
-      label: What did you do?
-      description: The steps, in order, so someone else can do the same.
+      label: What happened?
+      description: "One or two sentences. Trace shows this as the summary."
     validations:
       required: true
   - type: textarea
@@ -22,9 +23,20 @@ body:
     validations:
       required: true
   - type: textarea
-    id: happened
+    id: did
     attributes:
-      label: What happened instead?
+      label: How to make it happen
+      description: "The steps, in order, so someone else can do the same."
+    validations:
+      required: true
+  - type: dropdown
+    id: how-bad
+    attributes:
+      label: How bad is it?
+      options:
+        - "Stops work: nobody can get past it"
+        - "Has a workaround: slower or awkward, but work goes on"
+        - "Looks wrong: nothing is stopped"
     validations:
       required: true
   - type: dropdown
@@ -32,11 +44,20 @@ body:
     attributes:
       label: Where
       options:
-        - Dev
-        - Test
-        - Prod
+        - "Dev"
+        - "Test"
+        - "Prod"
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When did it happen?
+      description: "Day and time, e.g. Tue 3 Feb, about 10:40. It is what finds the error in the logs."
+    validations:
+      required: true
   - type: input
     id: correlation
     attributes:
       label: Correlation ID
-      description: From the error message, if there was one.
+      description: "From the error message, if it showed one."
