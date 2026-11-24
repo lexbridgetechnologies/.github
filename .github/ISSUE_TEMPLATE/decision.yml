@@ -40,7 +40,7 @@ body:
     id: decide-by
     attributes:
       label: Decide by
-      description: "A date, e.g. 2026-12-04. Set the same date as **Due** on the Lexbridge Apps Project, so Trace shows it when it is late."
+      description: "A date, e.g. 2026-12-04. Set the same date as the issue field **Target date**, so Trace shows it when it is late."
     validations:
       required: true
   - type: textarea

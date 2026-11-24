@@ -31,4 +31,4 @@ body:
       required: true
   - type: markdown
     attributes:
-      value: "After creating it: set **Start** and **Due** on the Lexbridge Apps Project, then add the work with **Create sub-issue**."
+      value: "Set **Start date** and **Target date** with the issue fields (the **+** at the bottom of this form, or the sidebar later); Trace reads them from there. After creating it, add the work with **Create sub-issue**."
