@@ -9,6 +9,9 @@ body:
   - type: markdown
     attributes:
       value: "Title: **start with a verb**, e.g. *Write the how-to for adding goals*."
+  - type: markdown
+    attributes:
+      value: "Part of a goal? Open the goal and use **Create sub-issue** instead, so it is linked for you. Set **Start date**, **Target date**, **Priority**, **Effort** and an assignee before creating it."
   - type: textarea
     id: what
     attributes:
