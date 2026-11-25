@@ -9,7 +9,7 @@ body:
       value: "**No client data.** No client names, emails, documents or screenshots of client records, here or in comments."
   - type: markdown
     attributes:
-      value: "Title: **UAT: the app and the release**, e.g. *UAT: Polaris Goal 3*."
+      value: "Title: **UAT: the app and the release**, e.g. *UAT: Polaris release of the restructure*."
   - type: input
     id: release
     attributes:
