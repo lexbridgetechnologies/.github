@@ -1,7 +1,7 @@
 name: Goal
 description: Something to reach by a date. Its work is its sub-issues
 type: Goal
-title: "Goal [number]: "
+title: "Goal: "
 projects: ["lexbridgetechnologies/2"]
 body:
   - type: markdown
@@ -9,7 +9,7 @@ body:
       value: "**No client data.** No client names, emails, documents or screenshots of client records, here or in comments."
   - type: markdown
     attributes:
-      value: "Title: **Goal [number]: what will be true**, e.g. *Goal 2: Expand UAT with automated test cases*. For the number, look at the app's goals (Issues, then type:Goal) and use the next one. Each app counts its own goals, and a goal keeps its number for good, even when an earlier one is dropped."
+      value: "Title: **Goal: what will be true**, e.g. *Goal: UAT covers every transaction, mostly automated*. No numbers: goals move earlier or later, so their order comes from their Start date and Target date, not from the title."
   - type: textarea
     id: outcome
     attributes:
